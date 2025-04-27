@@ -7,6 +7,7 @@ function encourage() {
   document.getElementById("output").textContent = finalMessage;
 
   renderTTS(finalMessage);
+  spawnFloatingHeart(); 
 }
 
 function renderTTS(text) {
@@ -32,3 +33,17 @@ function renderTTS(text) {
 window.speechSynthesis.onvoiceschanged = function () {
   renderTTS(""); // Pre-load voices
 };
+
+
+function spawnFloatingHeart() {
+  const heart = document.createElement('div');
+  heart.className = 'floating-heart';
+  heart.textContent = '💖';
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 2000); // Remove after animation ends
+}
+
+
