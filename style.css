@@ -1,0 +1,108 @@
+body {
+  background-color: #ffeef8; /* soft pink background */
+  font-family: "Poppins", Arial, sans-serif; /* soft round font */
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #ff69b4; /* cute pink */
+  text-decoration: none;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #555;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #ffd1e8;
+  border-radius: 10px;
+  width: 100%;
+}
+
+button {
+  background: linear-gradient(135deg, #ff69b4, #ff85c1); /* soft gradient */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(
+    135deg,
+    #ff85c1,
+    #ffa3d1
+  ); /* lighter gradient on hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.6);
+}
+
+#output {
+  font-size: 20px;
+  padding: 15px;
+  margin-top: 20px;
+  background: #fff0f5; /* light pastel pink */
+  border-radius: 15px;
+  text-align: center;
+  color: #d63384;
+  font-weight: 600;
+}
+
+/* Volume Slider Styling */
+#volume {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#volume::-webkit-slider-runnable-track {
+  background: #ff69b4;
+  height: 6px;
+  border-radius: 10px;
+}
+
+#volume::-webkit-slider-thumb {
+  background: #ffffff;
+  border: 2px solid #ff69b4;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: -6px;
+  cursor: pointer;
+}
+
+#volume::-moz-range-thumb {
+  background: #ffffff;
+  border: 2px solid #ff69b4;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#volume::-moz-range-track {
+  background: #ff69b4;
+  height: 6px;
+  border-radius: 10px;
+}
