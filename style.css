@@ -106,3 +106,28 @@ button:hover {
   height: 6px;
   border-radius: 10px;
 }
+
+/* Floating heart animation */
+.floating-heart {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  font-size: 30px;
+  color: #ff69b4;
+  animation: floatUp 2s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-200px);
+    opacity: 0;
+  }
+}
+
+
+
